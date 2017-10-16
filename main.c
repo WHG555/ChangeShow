@@ -13,5 +13,5 @@
 
 void main (void)
 {
-	printf("show data\n"_);
+	printf("show data\n");
 }
