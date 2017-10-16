@@ -14,4 +14,5 @@
 void main (void)
 {
 	printf("show data\n");
+	printf("long is %d\n", sizeof(long));
 }
