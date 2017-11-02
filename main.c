@@ -11,7 +11,15 @@
 #include <stdio.h>
 #include "datatypedef.h"
 #include "datashow.h"
+#include <execinfo.h>
 
+void hello()
+{
+
+
+	printf("jklj、你\n");
+	return ;
+}
 
 void main (void)
 {
@@ -20,4 +28,6 @@ void main (void)
 	printf("long is %ld\n", sizeof(long));
 	ShowData(buf, 16, 64);
 	ShowDataAddr(buf, 10, 64);
+//	ShowFunctionName(ShowData(buf, 14, 64));
+	ShowFunctionName(hello);
 }

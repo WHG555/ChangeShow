@@ -13,11 +13,13 @@
 #define __DATASHOW_H__
 
 #include <stdio.h>
+#include <execinfo.h>
 #include "datatypedef.h"
 
 
 void ShowDataAddr (uint8 *ucbuf, uint8 kuan, uint32 uilong);
 void ShowData(uint8 *ucbuf, uint8 kuan, uint32 uilong);
+void ShowFunctionName(void *func);
 
 #endif
 

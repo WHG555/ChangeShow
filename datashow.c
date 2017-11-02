@@ -51,3 +51,10 @@ void ShowData(uint8 *ucbuf, uint8 kuan, uint32 uilong)
 	}
 
 }
+
+
+void ShowFunctionName(void *func)
+{
+	void *funcname = &func;
+	backtrace_symbols_fd(&func, 1, 1);
+}

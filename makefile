@@ -2,9 +2,9 @@
 CC = gcc
 
 ss: main.o datashow.o
-	$(CC) -o ss main.o datashow.o
+	$(CC) -o ss main.o datashow.o -rdynamic
 main.o : main.c
-	$(CC) -c main.c
+	$(CC) -c main.c 
 datashow.o : datashow.c
 	$(CC) -c datashow.c
 
