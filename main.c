@@ -13,12 +13,11 @@
 #include "datashow.h"
 #include <execinfo.h>
 
-void hello()
+int hello (int i)
 {
-
-
-	printf("jklj、你\n");
-	return ;
+	i += 4;
+	printf("hello %d \n", i);
+	return 1;
 }
 
 void main (void)
@@ -28,6 +27,5 @@ void main (void)
 	printf("long is %ld\n", sizeof(long));
 	ShowData(buf, 16, 64);
 	ShowDataAddr(buf, 10, 64);
-//	ShowFunctionName(ShowData(buf, 14, 64));
 	ShowFunctionName(hello);
 }

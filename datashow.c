@@ -53,6 +53,7 @@ void ShowData(uint8 *ucbuf, uint8 kuan, uint32 uilong)
 }
 
 
+//显示函数地址，函数不能有入参
 void ShowFunctionName(void *func)
 {
 	void *funcname = &func;

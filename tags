@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	makefile	/^CC = gcc$/;"	m
+ShowData	datashow.c	/^void ShowData(uint8 *ucbuf, uint8 kuan, uint32 uilong)$/;"	f
+ShowDataAddr	datashow.c	/^void ShowDataAddr (uint8 *ucbuf, uint8 kuan, uint32 uilong)$/;"	f
+ShowFunctionName	datashow.c	/^void ShowFunctionName(void *func)$/;"	f
+__DATASHOW_H__	datashow.h	13;"	d
+hello	main.c	/^int hello (int i)$/;"	f
+int16	datatypedef.h	/^typedef short          int16;$/;"	t
+int32	datatypedef.h	/^typedef int            int32;$/;"	t
+int64	datatypedef.h	/^typedef long           int64;$/;"	t
+int8	datatypedef.h	/^typedef char           int8;$/;"	t
+main	main.c	/^void main (void)$/;"	f
+uint16	datatypedef.h	/^typedef unsigned short uint16;$/;"	t
+uint32	datatypedef.h	/^typedef unsigned int   uint32;$/;"	t
+uint8	datatypedef.h	/^typedef unsigned char  uint8;$/;"	t
