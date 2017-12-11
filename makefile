@@ -1,12 +1,12 @@
 
 CC = gcc
+OBJS = ./upload/*
 
-ss: main.o datashow.o
-	$(CC) -o ss main.o datashow.o -rdynamic
+ss: main.o $(OBJS)
+	$(CC) -C datashow
+	$(CC) -o $@ $^ 
 	ctags -R *
 main.o : main.c
 	$(CC) -c main.c 
-datashow.o : datashow.c
-	$(CC) -c datashow.c
 clean:
 	rm ss *.o tags
