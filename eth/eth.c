@@ -10,8 +10,5 @@
 
 #include "eth.h"
 
-void eth(void)
-{
 
-	printf("000\n");
-}
+void 
