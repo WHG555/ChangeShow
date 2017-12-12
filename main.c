@@ -9,8 +9,8 @@
  ************************************************************************/
 
 #include <stdio.h>
-#include "datatypedef.h"
-#include "datashow/datashow.h"
+//#include "datatypedef.h"
+//#include "datashow/datashow.h"
 #include <execinfo.h>
 
 int hello (int i)
@@ -22,10 +22,10 @@ int hello (int i)
 
 void main (void)
 {
-	uint8 buf[64];
+//	uint8 buf[64];
 	printf("show data\n");
 	printf("long is %ld\n", sizeof(long));
-	ShowData(buf, 16, 64);
-	ShowDataAddr(buf, 10, 64);
-	ShowFunctionName(hello);
+//	ShowData(buf, 16, 64);
+//	ShowDataAddr(buf, 10, 64);
+//	ShowFunctionName(hello);
 }

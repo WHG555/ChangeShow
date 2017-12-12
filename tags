@@ -4,17 +4,21 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-CC	makefile	/^CC = gcc$/;"	m
-ShowData	datashow.c	/^void ShowData(uint8 *ucbuf, uint8 kuan, uint32 uilong)$/;"	f
-ShowDataAddr	datashow.c	/^void ShowDataAddr (uint8 *ucbuf, uint8 kuan, uint32 uilong)$/;"	f
-ShowFunctionName	datashow.c	/^void ShowFunctionName(void *func)$/;"	f
-__DATASHOW_H__	datashow.h	13;"	d
+CC	datashow/makefile	/^CC = gcc$/;"	m
+CC	obj/makefile	/^CC = gcc$/;"	m
+CC	src/eth/makefile	/^CC = gcc$/;"	m
+OBJS	obj/makefile	/^OBJS = .\/obj\/$/;"	m
+ShowData	datashow/datashow.c	/^void ShowData(uint8 *ucbuf, uint8 kuan, uint32 uilong)$/;"	f
+ShowDataAddr	datashow/datashow.c	/^void ShowDataAddr (uint8 *ucbuf, uint8 kuan, uint32 uilong)$/;"	f
+ShowFunctionName	datashow/datashow.c	/^void ShowFunctionName(void *func)$/;"	f
+__DATASHOW_H__	datashow/datashow.h	13;"	d
+ethk	src/eth/eth.c	/^void ethk (void)$/;"	f
 hello	main.c	/^int hello (int i)$/;"	f
-int16	datatypedef.h	/^typedef short          int16;$/;"	t
-int32	datatypedef.h	/^typedef int            int32;$/;"	t
-int64	datatypedef.h	/^typedef long           int64;$/;"	t
-int8	datatypedef.h	/^typedef char           int8;$/;"	t
+int16	include/datatypedef.h	/^typedef short          int16;$/;"	t
+int32	include/datatypedef.h	/^typedef int            int32;$/;"	t
+int64	include/datatypedef.h	/^typedef long           int64;$/;"	t
+int8	include/datatypedef.h	/^typedef char           int8;$/;"	t
 main	main.c	/^void main (void)$/;"	f
-uint16	datatypedef.h	/^typedef unsigned short uint16;$/;"	t
-uint32	datatypedef.h	/^typedef unsigned int   uint32;$/;"	t
-uint8	datatypedef.h	/^typedef unsigned char  uint8;$/;"	t
+uint16	include/datatypedef.h	/^typedef unsigned short uint16;$/;"	t
+uint32	include/datatypedef.h	/^typedef unsigned int   uint32;$/;"	t
+uint8	include/datatypedef.h	/^typedef unsigned char  uint8;$/;"	t

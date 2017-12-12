@@ -14,7 +14,7 @@
 
 #include <stdio.h>
 #include <execinfo.h>
-#include "datatypedef.h"
+#include "../include/datatypedef.h"
 
 
 void ShowDataAddr (uint8 *ucbuf, uint8 kuan, uint32 uilong);

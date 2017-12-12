@@ -1,12 +1,6 @@
-
-CC = gcc
-OBJS = ./upload/*
-
-ss: main.o $(OBJS)
-	$(CC) -C datashow
-	$(CC) -o $@ $^ 
-	ctags -R *
-main.o : main.c
-	$(CC) -c main.c 
+ss: main.o  
+	make -C obj
 clean:
-	rm ss *.o tags
+	find . -name "*.o" | xargs rm -vf
+	find . -name "ss" | xargs rm -vf
+	ctags -R *
