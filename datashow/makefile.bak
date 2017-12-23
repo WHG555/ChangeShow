@@ -1,8 +1,0 @@
-
-CC = gcc
-
-datashow.o : datashow.c
-	$(CC) -c datashow.c
-	cp -v datashow.o ../upload
-clean:
-	rm *.o
