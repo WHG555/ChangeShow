@@ -1,4 +1,4 @@
-cscope 15 $HOME/git/Changeshow/sqlite               0000139845
+cscope 15 $HOME/git/Changeshow/sqlite               0000140114
 	@main.c
 
 11 
@@ -73,7 +73,7 @@ NULL
 i
 =0; i<
 rows
-; i++) {
++1; i++) {
 
 29 
 j
@@ -98,18 +98,60 @@ j
 ("\n");
 
 34 
+	`sql™e3_g‘_bË
+(
+cÚn
+, "š£¹ iÁØwhg (´ocid,…roúame,…rÙid, sigid,‚odeèv®ue (0, ' ', 2, 5, '£rŸl')", &
+db»suÉ
+, &
+rows
+, &
+cÞs
+, 
+NULL
+);
+
+35 
+i
+=0; i<
+rows
++1; i++) {
+
+36 
+j
+=0; j<
+cÞs
+; j++) {
+
+37 
+	`´štf
+("%s\t", 
+db»suÉ
+[
+i
+*
+cÞs
++
+j
+]);
+
+39 
+	`´štf
+("\n");
+
+42 
 	`sql™e3_ä“_bË
 (
 db»suÉ
 );
 
-35 
+43 
 	`sql™e3_þo£
 (
 cÚn
 );
 
-38 
+46 
 	}
 }
 

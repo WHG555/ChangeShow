@@ -25,12 +25,20 @@ int main (void)
 	int i,j;
 	sqlite3_get_table(conn, "select * from whg", &dbresult, &rows, &cols, NULL);
 
-	for(i=0; i<rows; i++) {
+	for(i=0; i<rows+1; i++) {
 		for(j=0; j<cols; j++) {
 			printf("%s\t", dbresult[i*cols+j]);
 		}
 		printf("\n");
 	}
+	sqlite3_get_table(conn, "insert into whg (procid, procname, protid, sigid, node) values (0, ' ', 2, 5, 'serial')", &dbresult, &rows, &cols, NULL);
+	for(i=0; i<rows+1; i++) {
+		for(j=0; j<cols; j++) {
+			printf("%s\t", dbresult[i*cols+j]);
+		}
+		printf("\n");
+	}
+
 	sqlite3_free_table(dbresult);
 	sqlite3_close(conn);
 
